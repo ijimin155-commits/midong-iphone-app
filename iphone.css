@@ -1,4 +1,32 @@
 /* Logical iPhone 15 viewport: 393 × 852 CSS pixels. */
+.language-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 0 0 6px;
+  font-size: 12px;
+  color: #59718f;
+}
+.language-row select {
+  border: 1px solid #d7e4f5;
+  border-radius: 10px;
+  background: white;
+  color: #175bb5;
+  padding: 8px 12px;
+  min-height: 40px;
+  font-size: 16px;
+}
+html[lang^="zh"],
+html[lang^="yue"] {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "PingFang HK", "PingFang SC",
+    "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+}
+html[lang^="zh"] body,
+html[lang^="yue"] body {
+  font-family: inherit;
+}
 :root {
   --app-height: 100dvh;
   --device-scale: 1;
